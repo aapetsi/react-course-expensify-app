@@ -8,7 +8,7 @@
     "start": "node server/server.js",
     "parcel-start": "parcel public/index.html",
     "build": "parcel build public/index.html --out-dir prod",
-    "test": "jest --config=jest.config.json",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
@@ -26,6 +26,8 @@
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "redux": "^4.0.1",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
@@ -34,6 +36,8 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
     "enzyme": "^3.9.0",
     "enzyme-to-json": "^3.3.5",
     "jest": "^24.7.1",

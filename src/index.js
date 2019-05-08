@@ -6,9 +6,6 @@ import configureStore from "./store/configureStore";
 import AppRouter from "./routers/AppRouter";
 import "react-dates/lib/css/_datepicker.css";
 
-import { addExpense } from "./actions/expenses";
-import { setTextFilter } from "./actions/filters";
-import getVisibleExpenses from "./selectors/expenses";
 import "./firebase/firebase";
 
 const store = configureStore();
